@@ -1,0 +1,26 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+  
+
+</head>
+<body>
+	
+  <!-- 子组件模版 -->
+  <template id="child-template">
+    <input v-model="msg">
+    <button v-on:click="notify">dispatch event</button>
+  </template>
+
+  <!-- 父组件模版 -->
+	
+  <div id="events-example">
+    <p>{{ message | json}}</p>
+    <child></child>
+  </div>
+  
+  <script src="../bower_components/vue/dist/vue.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
