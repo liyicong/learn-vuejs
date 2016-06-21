@@ -1,0 +1,20 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+  
+
+</head>
+<body>
+	
+	<div id="example">
+    <input v-model="parentMsg" />
+    <br>
+    <child v-bind:my-message="parentMsg"></child>
+    <!-- <child :my-message="parentMsg"></child> -->
+  </div>
+  
+  <script src="../bower_components/vue/dist/vue.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
